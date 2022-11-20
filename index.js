@@ -214,8 +214,6 @@ function ConditionButtonSide() {
 }
 ConditionButtonSide();
 
-
-
 function CreatetableSide() {
     TableSide = document.createElement("div");
     TableSide.className = "create";
@@ -452,8 +450,6 @@ const UserName = document.getElementById("inputName");
 const Email = document.getElementById("inputEmail");
 const textArea = document.getElementById("inputField");
 
-
-
 const buildTable = (data) => {
     let tableData = "";
     data.forEach((users, i) => {
@@ -512,7 +508,6 @@ function closePopup() {
 
 // updata data
 function Save() {
-    console.log("ooo");
     const validInput =
         AddvalidateName() && AddvalidateEmail() && AddvalidateAddress();
 
@@ -576,7 +571,6 @@ function Cancel() {
 }
 
 function Deletbtn(id) {
-    console.log("ok");
     num = id;
     dltPupup.classList.add("Modal1");
 }
@@ -630,7 +624,6 @@ function editbtn(id) {
 // Edit detailes
 
 function updateValue(e) {
-    console.log("upp");
     e.preventDefault();
     const Input =
         EditvalidName("iName") &&
@@ -659,7 +652,6 @@ function updateValue(e) {
 // Reset table
 
 function ResetValue(e) {
-    console.log("ok");
     e.preventDefault();
     const res = dataForTable.find((item) => item.id == editId);
 
@@ -675,7 +667,6 @@ function ResetValue(e) {
 // Edit details validation
 
 function EditvalidName() {
-    console.log("error");
     const correctway = /^[A-za-z]+$/;
     const name = document.getElementById("iName").value;
 
